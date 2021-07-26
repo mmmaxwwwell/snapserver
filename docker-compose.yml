@@ -10,5 +10,7 @@ services:
       - 1705:1705
     networks:
       - snapserver
+    env_file:
+      ./settings/common.conf
 networks:
   snapserver:
