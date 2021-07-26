@@ -12,5 +12,8 @@ services:
       - snapserver
     env_file:
       ./settings/common.conf
+    volumes:
+      - ./appdata/snapserver/librespot-fifo:/var/cache/snapcast/snapfifo
+      - ./settings/snapserver.conf:/etc/snapserver.conf
 networks:
   snapserver:
