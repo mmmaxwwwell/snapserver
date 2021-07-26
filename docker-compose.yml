@@ -1,0 +1,14 @@
+version: '3'
+services:
+  snapserver:
+    image: mmmaxwwwell/snapserver:latest
+    #build: .
+    container_name: snapserver
+    ports:
+      - 1780:1780
+      - 1704:1704
+      - 1705:1705
+    networks:
+      - snapserver
+networks:
+  snapserver:
